@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <label for="email"> Email </label>
+        <input type="text" id="email" placeholder="Vui lòng nhập email"> <br> <br>
+        <label for="matkhau"> Mật khẩu </label>
+        <input type="password" id="matkhau"> <br> <br>
+        <button onclick="Login()"> Login </button>
+        <script>
+            let user = [
+                {
+                    name: 'chung',
+                    pass: 301,
+                    gmail: 'chungchung@gmail.com',
+                },
+                {
+                    name: 'hoa',
+                    pass: 305,
+                    gmail: 'chungchung1@gmail.com',
+                }
+            ];
+            function Login(params) {
+                let gmail='hungchung@gmail.com';
+                let pass= 301;
+                let checgmail=false;
+                let index;
+                for (let index = 0; index < user.length; index++) {
+                   if (user[i].gmail===gmail && user[i].pass===pass){
+                    checkgmail=true;
+                    break;
+                   }
+                    if (checkgmail) {
+                        alert('tài khoản không đúng')
+                    } else {
+                        alert('gmail hoặc mật khẩu không đúng')
+                    }
+                }
+                
+            }
+
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Dùng nhiều;
+        1.destructoring với object
+        -đặt tên key phải giống với tên key của object và không cần đúng thứ tự
+        2.destructoring với mảng
+
+     -->
+     <script>
+        let obj={
+            name:" thuỷ",
+            age:20,
+            address:"hà nội",
+        }
+        const {age,name,address}=obj;
+        console.log("name",name);
+        console.log("age", age);
+        let number=[4,5];
+        const [a,b,c] =number;
+        console.log(c);
+     </script>
+</body>
+</html>
